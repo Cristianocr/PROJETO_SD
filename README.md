@@ -5,8 +5,8 @@
 - Rode os comandos:
    - `cd src`
    - Compile: `javac *.java`
-   - Inicie o servidor: `java edu.inf.ufp.sd.Server`
-   - Inicie o cliente: `java edu.inf.ufp.sd.Client`
+   - Inicie o servidor: `java edu.inf.ufp.sd.edu.ufp.inf.sd.Server`
+   - Inicie o cliente: `java edu.inf.ufp.sd.edu.ufp.inf.sd.Client`
 
 # Introdução
 
@@ -26,4 +26,4 @@ Através de um mapa exibido por uma interface gráfica, o jogador fará seus m
 
 Autor: [Bruno Papa](https://github.com/brnpapa)
 
-Sprites ripped by Zanaku, edu.inf.ufp.sd.Game tilesets ripped by Plasma Captain.
+Sprites ripped by Zanaku, edu.inf.ufp.sd.edu.ufp.inf.sd.Game tilesets ripped by Plasma Captain.
