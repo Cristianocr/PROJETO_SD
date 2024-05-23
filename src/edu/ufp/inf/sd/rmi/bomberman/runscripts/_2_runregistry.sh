@@ -11,4 +11,4 @@ echo ${ABSPATH2CLASSES}
 #clear
 #pwd
 #rmiregistry &
-rmiregistry
+rmiregistry 1100

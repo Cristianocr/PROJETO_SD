@@ -31,8 +31,8 @@
 @Set SERVICE_NAME_ON_REGISTRY=HelloWorldService
 @Set CLIENT_CLASS_PREFIX=HelloWorld
 @Set SERVER_CLASS_PREFIX=HelloWorld
-@Set CLIENT_CLASS_POSTFIX=Client
-@Set SERVER_CLASS_POSTFIX=Server
+@Set CLIENT_CLASS_POSTFIX=edu.ufp.inf.sd.projeto_bomberman.client.edu.ufp.inf.sd.rmi.bomberman.Client
+@Set SERVER_CLASS_POSTFIX=edu.ufp.inf.sd.projeto_bomberman.server.edu.ufp.inf.sd.rmi.bomberman.Server
 @Set SERVANT_IMPL_CLASS_POSTFIX=Impl
 @REM Set SETUP_CLASS_POSTFIX=Setup
 @REM Set SERVANT_ACTIVATABLE_IMPL_CLASS_POSTFIX=ActivatableImpl

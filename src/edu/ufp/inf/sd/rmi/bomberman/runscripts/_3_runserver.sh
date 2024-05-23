@@ -5,25 +5,50 @@
 #@REM Date: 20/02/2014
 #@REM ************************************************************************************
 #@REM Script usage: runsetup <role> (where role should be: server / client)
-#@REM source ./setenv.sh
+
+# Source the environment variables
 source ./setenv.sh server
 
-cd ${ABSPATH2CLASSES}
-#clear
-#pwd
-# * java.rmi.server.codebase property specifies the location (codebase URL) MAIL_FROM_ADDR which the definitions for classes originating MAIL_FROM_ADDR this server can be downloaded.
-#   ND: if codebase specifies a directory hierarchy (as opposed MAIL_TO_ADDR a JAR file), you must include a trailing slash at the end of the codebase URL.
-# * java.rmi.server.hostname property specifies the SMTP_HOST_ADDR name or address MAIL_TO_ADDR put in the stubs for remote objects exported in this Java virtual machine.
-#   This value is the SMTP_HOST_ADDR name or address used by clients when they attempt remote method invocations.
-#   By default, the RMI implementation uses the server's IP address as indicated by the java.net.InetAddress.getLocalHost API.
-#   However, sometimes, this address is not appropriate for all clients and a fully qualified SMTP_HOST_ADDR name would be more effective.
-#   To ensure that RMI uses a SMTP_HOST_ADDR name (or IP address) for the server that is routable MAIL_FROM_ADDR all potential clients, set the java.rmi.server.hostname property.
-# * java.security.policy property is used MAIL_TO_ADDR specify the policy file that contains the permissions you intend MAIL_TO_ADDR grant.
-java -cp ${CLASSPATH} \
-     -Djava.rmi.server.codebase=${SERVER_CODEBASE} \
-     -Djava.rmi.server.hostname=${SERVER_RMI_HOST} \
-     -Djava.security.policy=${SERVER_SECURITY_POLICY} \
-     ${JAVAPACKAGEROLE}.${SERVER_CLASS_PREFIX}${SERVER_CLASS_POSTFIX} ${REGISTRY_HOST} ${REGISTRY_PORT} ${SERVICE_NAME_ON_REGISTRY}
+# Verify that the necessary environment variables are set
+required_vars=(
+    ABSPATH2CLASSES CLASSPATH SERVER_CODEBASE SERVER_RMI_HOST
+    SERVER_SECURITY_POLICY JAVAPACKAGEROLE SERVER_CLASS_PREFIX
+    SERVER_CLASS_POSTFIX REGISTRY_HOST REGISTRY_PORT
+    SERVICE_NAME_ON_REGISTRY ABSPATH2SRC JAVASCRIPTSPATH
+)
 
-cd ${ABSPATH2SRC}/${JAVASCRIPTSPATH}
-#pwd
+for var in "${required_vars[@]}"; do
+    if [ -z "${!var}" ]; then
+        echo "Error: ${var} is not set. Please check your setenv.sh."
+        exit 1
+    fi
+done
+
+# Navigate to the classes directory
+if [ -d "${ABSPATH2CLASSES}" ]; then
+    cd "${ABSPATH2CLASSES}" || { echo "Failed to change directory to ${ABSPATH2CLASSES}"; exit 1; }
+else
+    echo "Directory ${ABSPATH2CLASSES} does not exist."
+    exit 1
+fi
+
+# Run the server
+java -cp "${CLASSPATH}" \
+    -Djava.rmi.server.codebase="${SERVER_CODEBASE}" \
+    -Djava.rmi.server.hostname="${SERVER_RMI_HOST}" \
+    -Djava.security.policy="${SERVER_SECURITY_POLICY}" \
+    "${JAVAPACKAGEROLE}.${SERVER_CLASS_PREFIX}${SERVER_CLASS_POSTFIX}" "${REGISTRY_HOST}" "${REGISTRY_PORT}" "${SERVICE_NAME_ON_REGISTRY}"
+
+# Navigate to the JavaScript path
+if [ -d "${ABSPATH2SRC}/${JAVASCRIPTSPATH}" ]; then
+    cd "${ABSPATH2SRC}/${JAVASCRIPTSPATH}" || { echo "Failed to change directory to ${ABSPATH2SRC}/${JAVASCRIPTSPATH}"; exit 1; }
+else
+    echo "Directory ${ABSPATH2SRC}/${JAVASCRIPTSPATH} does not exist."
+    exit 1
+fi
+
+# Optionally clear the screen
+# clear
+
+# Optionally print the current directory
+# pwd
