@@ -14,7 +14,7 @@ cd ${ABSPATH2CLASSES}
 #clear
 echo ${ABSPATH2CLASSES}
 #Run python 3:
-python3 -m http.server 8000
+python3 -m http.server 8080
 #Run python 2.7:
 #python -m SimpleHTTPServer 8000
 
