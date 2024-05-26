@@ -62,5 +62,14 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="auth0.java.jwt" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/lib/jackson-core-2.9.9-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

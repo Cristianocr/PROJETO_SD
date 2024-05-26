@@ -1,4 +1,4 @@
-package edu.ufp.inf.sd.rabbitmq.bomberman;
+package edu.ufp.inf.sd.rmi.client;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,9 +12,9 @@ public class Game extends JPanel {
       try {
          System.out.print("Inicializando jogadores...");
          you = new Player(Client.id, this);
-         enemy1 = new Player((Client.id+1)%Const.QTY_PLAYERS, this);
-         enemy2 = new Player((Client.id+2)%Const.QTY_PLAYERS, this);
-         enemy3 = new Player((Client.id+3)%Const.QTY_PLAYERS, this);
+         enemy1 = new Player((Client.id+1)% Const.QTY_PLAYERS, this);
+         enemy2 = new Player((Client.id+2)% Const.QTY_PLAYERS, this);
+         enemy3 = new Player((Client.id+3)% Const.QTY_PLAYERS, this);
       } catch (InterruptedException e) {
          System.out.println(" erro: " + e + "\n");
          System.exit(1);
@@ -41,8 +41,8 @@ public class Game extends JPanel {
       for (int i = 0; i < Const.LIN; i++)
          for (int j = 0; j < Const.COL; j++)
             g.drawImage(
-               Sprite.ht.get(Client.map[i][j].img), 
-               Client.map[i][j].x, Client.map[i][j].y, 
+               Sprite.ht.get(Client.map[i][j].img),
+               Client.map[i][j].x, Client.map[i][j].y,
                Const.SIZE_SPRITE_MAP, Const.SIZE_SPRITE_MAP, null
             );
    }

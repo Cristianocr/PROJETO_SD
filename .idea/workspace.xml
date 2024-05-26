@@ -4,975 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9bc2a3c-dbc7-4204-9d27-f03306bd12c1" name="Changes" comment="update1">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/auth0_java_jwt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_9_9_javadoc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_7_30__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.9.9-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jjwt-api-0.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jjwt-impl-0.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jjwt-jackson-0.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/ClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Const.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/CoordinatesThrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/MapUpdatesThrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ServerGuiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ConsumerM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/ProducerM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/ClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Const.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/CoordinatesThrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/MapUpdatesThrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Sender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client/BombermanClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client/ObserverGuiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/rmisetup/SetupContextRMI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/BombermanGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/BombermanGameI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/BombermanServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/GameFactoryI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/GameFactoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/GameSessionI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/GameSessionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROJETO_SD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PROJETO_SD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block-on-fire-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block-on-fire-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block-on-fire-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block-on-fire-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block-on-fire-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block-on-fire-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block-on-fire-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block-on-fire-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block-on-fire-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block-on-fire-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block-on-fire-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block-on-fire-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-icone-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-icone-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-icone-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-icone-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-planted-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-planted-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-planted-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-planted-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-planted-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-planted-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-planted-red-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-planted-red-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-planted-red-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-planted-red-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-planted-red-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-planted-red-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-red-icone-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-red-icone-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/bomb-red-icone-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/bomb-red-icone-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/center-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/center-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/center-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/center-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/center-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/center-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/center-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/center-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/center-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/center-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/down-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/down-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/down-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/down-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/down-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/down-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/down-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/down-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/down-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/down-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/floor-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/floor-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/floor-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/floor-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/item-destruction-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/item-destruction-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/left-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/left-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/left-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/left-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/left-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/left-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/left-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/left-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/left-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/left-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-hori-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-hori-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-hori-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-hori-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-hori-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-hori-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-hori-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-hori-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-hori-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-hori-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-vert-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-vert-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-vert-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-vert-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-vert-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-vert-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-vert-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-vert-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/mid-vert-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/mid-vert-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/right-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/right-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/right-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/right-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/right-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/right-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/right-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/right-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/right-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/right-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/up-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/up-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/up-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/up-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/up-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/up-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/up-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/up-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/up-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/up-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/wall-center.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/wall-center.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/wall-down-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/wall-down-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/wall-down-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/wall-down-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/wall-up-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/wall-up-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map/basic/wall-up-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/map/basic/wall-up-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/black/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/black/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/red/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/red/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/white/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/white/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/person/yellow/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/person/yellow/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block-on-fire-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block-on-fire-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block-on-fire-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block-on-fire-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block-on-fire-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block-on-fire-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block-on-fire-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block-on-fire-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block-on-fire-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block-on-fire-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block-on-fire-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block-on-fire-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-icone-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-icone-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-icone-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-icone-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-planted-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-planted-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-planted-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-planted-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-planted-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-planted-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-planted-red-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-planted-red-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-planted-red-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-planted-red-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-planted-red-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-planted-red-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-red-icone-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-red-icone-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/bomb-red-icone-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/bomb-red-icone-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/center-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/center-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/center-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/center-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/center-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/center-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/center-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/center-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/center-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/center-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/down-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/down-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/down-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/down-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/down-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/down-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/down-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/down-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/down-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/down-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/floor-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/floor-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/floor-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/floor-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/item-destruction-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/item-destruction-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/left-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/left-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/left-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/left-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/left-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/left-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/left-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/left-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/left-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/left-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-hori-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-hori-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-hori-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-hori-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-hori-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-hori-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-hori-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-hori-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-hori-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-hori-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-vert-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-vert-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-vert-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-vert-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-vert-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-vert-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-vert-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-vert-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/mid-vert-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/mid-vert-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/right-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/right-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/right-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/right-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/right-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/right-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/right-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/right-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/right-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/right-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/up-explosion-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/up-explosion-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/up-explosion-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/up-explosion-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/up-explosion-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/up-explosion-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/up-explosion-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/up-explosion-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/up-explosion-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/up-explosion-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/wall-center.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/wall-center.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/wall-down-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/wall-down-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/wall-down-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/wall-down-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/wall-up-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/wall-up-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/map/basic/wall-up-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/map/basic/wall-up-right.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/black/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/black/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/red/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/red/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/white/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/white/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/_spritesheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/_spritesheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/dead-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/dead-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/dead-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/dead-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/dead-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/dead-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/dead-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/dead-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/dead-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/dead-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/down-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/down-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/left-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/left-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/right-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/right-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/uhu-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/uhu-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/uhu-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/uhu-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/uhu-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/uhu-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/uhu-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/uhu-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/up-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/up-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/wait-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/wait-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/wait-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/wait-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/wait-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/wait-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/wait-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/wait-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/wait-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/wait-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/win-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/win-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/win-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/win-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/win-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/win-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/win-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/win-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/person/yellow/win-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/person/yellow/win-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/4711A-bomberman-master/images/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/images/screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/producer_queue_consumer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runconsumer.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runconsumer.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runproducer.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runproducer.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/setenv.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/setenv.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/producer_queue_prefetch_consumer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/producer_exchange_unamedqueues_consumers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runconsumer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runconsumer.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runobserver.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runobserver.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runproducer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runproducer.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/setenv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/setenv.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/producer_exchange_unamedqueues_consumers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runobserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SD/edu/ufp/inf/sd/rmi/bomberman/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/consumer/Recv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/producer/Send.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/producer_queue_consumer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_01_hello/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/consumer/SMTPConfigs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/consumer/SendMail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/consumer/Worker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/producer/NewTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/producer_queue_prefetch_consumer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_02_workqueues/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/chatgui/Observer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/chatgui/ObserverGuiClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/consumer/ReceiveLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ReceiveLogs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/producer/EmitLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/EmitLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/producer_exchange_unamedqueues_consumers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runobserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_03_pubsub/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/chatgui/Observer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/chatgui/ObserverGuiClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/consumer/ReceiveLogsTopic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/producer/EmitLogTopic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/producer_exchange_unamedqueues_consumers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runconsumer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runconsumer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runobserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runproducer.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/runproducer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/_04_topics/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmqservices/util/RabbitUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/util/RabbitUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/client/HelloWorldClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/server/HelloWorldImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/server/HelloWorldRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_01_helloworld/server/HelloWorldServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/client/CalculatorClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/server/CalculatorImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/server/CalculatorRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/server/CalculatorServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_02_calculator/server/RemoteArithmeticException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/client/PongClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/client/PongImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/client/PongRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/server/Ball.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/server/PingImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/server/PingRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/server/PingServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_03_pingpong/server/SampleThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/client/DigLibClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DBMockup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibFactoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibFactoryRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibSessionImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/DigLibSessionRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_04_diglib/server/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/client/ObserverGuiClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/client/ObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client/ObserverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/client/ObserverRI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client/ObserverRI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/server/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/server/SubjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/SubjectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/server/SubjectRI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/SubjectRI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_05_observer/server/SubjectServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/SubjectServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/client/VisitorClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_1_runpython.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_1_runpython.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_2_runregistry.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_2_runregistry.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_3_runserver.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_3_runserver.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_4_runclient.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/_4_runclient.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/setenv.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/setenv.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/runscripts/startAll.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/client.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/clientAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/group.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/rmid.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/serverAllPermition.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/securitypolicies/setup.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/ConcreteElementFolderBooksImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/ConcreteElementFolderMagazinesImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/ElementFolderRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/SingletonFolderOperationsBooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/SingletonFolderOperationsMagazines.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/SingletonFoldersOperationsI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/VisitorFolderOperationI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/VisitorServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/VisitorsFoldersOperationCreateFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/_06_visitor/server/VisitorsFoldersOperationDeleteFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client/DigLibClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_1_runpython.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_1_runpython.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_2_runregistry.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_2_runregistry.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_3_runserver.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_3_runserver.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_4_runclient.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/_4_runclient.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/setenv.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/setenv.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/setenv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/runscripts/setenv.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DBMockup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibFactoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibFactoryRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibSessionImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/DigLibSessionRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/util/rmisetup/SetupContextRMI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/util/threading/ThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/threading/ThreadPool.java" afterDir="false" />
-    </list>
+    <list default="true" id="b9bc2a3c-dbc7-4204-9d27-f03306bd12c1" name="Changes" comment="update1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1010,53 +42,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BombermanClient.executor": "Run",
-    "Application.BombermanServer.executor": "Run",
-    "Application.Client (1).executor": "Run",
-    "Application.Client.executor": "Run",
-    "Application.DigLibServer.executor": "Run",
-    "Application.Server.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "true",
-    "JAR Application.jackson-annotations-2.14.2.jar.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script._1_runpython.sh.executor": "Run",
-    "Shell Script._2_runregistry.sh.executor": "Run",
-    "Shell Script._3_runserver.sh.executor": "Run",
-    "Shell Script._4_runclient.sh.executor": "Run",
-    "Shell Script.runconsumer.sh.executor": "Run",
-    "Shell Script.runobserver.sh.executor": "Run",
-    "Shell Script.runproducer.sh.executor": "Run",
-    "git-widget-placeholder": "default",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.34367815",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BombermanClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BombermanServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Client (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DigLibServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Server.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SubjectServer.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JAR Application.jackson-annotations-2.14.2.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.java-jwt-4.4.0.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script._1_runpython.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script._2_runregistry.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script._3_runserver.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script._4_runclient.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.runconsumer.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.runobserver.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.runproducer.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.startAll.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;default&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cristianojoaquimsoaresdarocha/Downloads/PROJETO_SD 2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.ufp.inf.sd.rmi.server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client" />
+      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/server" />
-      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi" />
@@ -1071,70 +106,89 @@
       <recent name="edu.ufp.inf.sd.rabbitmq.chatgui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BombermanClient">
-    <configuration name="BombermanClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.ufp.inf.sd.rmi.bomberman.client.BombermanClient" />
-      <module name="PROJETO_SD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.ufp.inf.sd.rmi.bomberman.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Shell Script._4_runclient.sh">
+    <configuration name="_1_runpython.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/_1_runpython.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="BombermanServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.ufp.inf.sd.rmi.bomberman.server.BombermanServer" />
-      <module name="PROJETO_SD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.ufp.inf.sd.rmi.bomberman.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="_2_runregistry.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/_2_runregistry.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.ufp.inf.sd.rmi.bomberman.Client" />
-      <module name="PROJETO_SD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.ufp.inf.sd.rmi.bomberman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="_3_runserver.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/_3_runserver.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.ufp.inf.sd.rmi.bomberman.Server" />
-      <module name="PROJETO_SD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.ufp.inf.sd.rmi.bomberman.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="_4_runclient.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/_4_runclient.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="jackson-annotations-2.14.2.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/jackson-annotations-2.14.2.jar" />
+    <configuration name="startAll.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/startAll.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BombermanClient" />
-        <item itemvalue="Application.BombermanServer" />
-        <item itemvalue="JAR Application.jackson-annotations-2.14.2.jar" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Server" />
+        <item itemvalue="Shell Script._4_runclient.sh" />
+        <item itemvalue="Shell Script._3_runserver.sh" />
+        <item itemvalue="Shell Script._2_runregistry.sh" />
+        <item itemvalue="Shell Script._1_runpython.sh" />
+        <item itemvalue="Shell Script.startAll.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -1162,7 +216,14 @@
       <workItem from="1716229242676" duration="7672000" />
       <workItem from="1716279785847" duration="14603000" />
       <workItem from="1716473384779" duration="703000" />
-      <workItem from="1716474097186" duration="6921000" />
+      <workItem from="1716474097186" duration="56263000" />
+      <workItem from="1716678379404" duration="1251000" />
+      <workItem from="1716679644459" duration="15510000" />
+      <workItem from="1716756463114" duration="168000" />
+      <workItem from="1716756651226" duration="175000" />
+      <workItem from="1716756842728" duration="58000" />
+      <workItem from="1716757097312" duration="17000" />
+      <workItem from="1716757285634" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="update1">
       <option name="closed" value="true" />
@@ -1196,11 +257,54 @@
       <option name="project" value="LOCAL" />
       <updated>1715079235949</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update1">
+      <option name="closed" value="true" />
+      <created>1716487081778</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716487081778</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update1">
+      <option name="closed" value="true" />
+      <created>1716487290734</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716487290734</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update1">
+      <option name="closed" value="true" />
+      <created>1716487345987</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716487345987</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update1">
+      <option name="closed" value="true" />
+      <created>1716487351294</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716487351294</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update1" />
