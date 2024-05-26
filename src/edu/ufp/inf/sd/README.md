@@ -5,8 +5,8 @@
 - Rode os comandos:
    - `cd src`
    - Compile: `javac *.java`
-   - Inicie o servidor: `java edu.ufp.inf.sd.rmi.bomberman.Server`
-   - Inicie o cliente: `java edu.ufp.inf.sd.rmi.bomberman.Client`
+   - Inicie o servidor: `java edu.ufp.inf.sd.rmi.client.Server`
+   - Inicie o cliente: `java edu.ufp.inf.sd.rmi.client.Client`
 
 # Introdução
 
@@ -26,4 +26,4 @@ Através de um mapa exibido por uma interface gráfica, o jogador fará seus m
 
 Autor: [Bruno Papa](https://github.com/brnpapa)
 
-Sprites ripped by Zanaku, edu.ufp.inf.sd.rmi.bomberman.Game tilesets ripped by Plasma Captain.
+Sprites ripped by Zanaku, edu.ufp.inf.sd.rmi.client.Game tilesets ripped by Plasma Captain.
