@@ -21,6 +21,8 @@ public interface GameSessionI extends Remote {
 
     void setToken(String token) throws RemoteException;
 
+    ArrayList<BombermanGame> getCreatedGames() throws RemoteException;
+
     ArrayList<BombermanGame> getAvailableGames() throws RemoteException;
 
     ArrayList<BombermanGame> getActiveGames() throws RemoteException;

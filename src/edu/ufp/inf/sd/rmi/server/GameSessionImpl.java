@@ -20,7 +20,8 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
         createdGames = new ArrayList<>();
         activeGames = new ArrayList<>();
     }
-    public GameSessionImpl(GameFactoryImpl gameFactoryImpl) throws RemoteException{
+
+    public GameSessionImpl(GameFactoryImpl gameFactoryImpl) throws RemoteException {
         super();
         this.gameFactory = gameFactoryImpl;
     }
@@ -49,6 +50,7 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
     /**
      * Override do metodo de criar game
      * criamos um SubjectRI, inserimos o jogo na dbmockup e damos attach do observer ao jogo
+     *
      * @param playerNumber
      * @param observerRI
      * @return
@@ -56,18 +58,20 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
      */
     @Override
     public BombermanGame createGame(Integer playerNumber, ObserverRI observerRI) throws RemoteException {
-        System.out.println("A criar jogo)\n");
         SubjectRI subjectRI = new SubjectImpl();
-        System.out.println("A criar subject)\n");
-        BombermanGame bombermanGame = gameFactory.dbMockup.insert(playerNumber,subjectRI);
-        System.out.println("A criar bombermanGame)\n");
+
+        BombermanGame bombermanGame = gameFactory.dbMockup.insert(playerNumber, subjectRI);
+
+        observerRI.setSubjectRI(subjectRI);
+
         bombermanGame.getSubjectRI().attach(observerRI);
-        System.out.println("A dar attach)\n");
+
         return bombermanGame;
     }
 
     /**
      * Quando o user escolher um jogo para se conectar, dá attach ao observer e retorna o jogo
+     *
      * @param id
      * @param observerRI
      * @return
@@ -75,8 +79,13 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
      */
     @Override
     public BombermanGame joinGame(int id, ObserverRI observerRI) throws RemoteException {
+
         BombermanGame bg = gameFactory.dbMockup.selectGame(id);
+
+        observerRI.setSubjectRI(bg.getSubjectRI());
+
         bg.getSubjectRI().attach(observerRI);
+
         return bg;
     }
 
@@ -90,19 +99,14 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
     }
 
     public ArrayList<BombermanGame> getCreatedGames() {
-        if(this.gameFactory.dbMockup.jogos.isEmpty()){
-            return null;
-        }
-        return this.gameFactory.dbMockup.jogos;
+        ArrayList<BombermanGame> bg = this.gameFactory.dbMockup.jogos;
+        return bg;
     }
 
     public ArrayList<BombermanGame> getActiveGames() throws RemoteException {
-        if(this.gameFactory.dbMockup.jogos.isEmpty()){
-            return null;
-        }
         ArrayList<BombermanGame> activeGames = new ArrayList<>();
-        for(BombermanGame bg : this.gameFactory.dbMockup.jogos){
-            if(bg.isRunning()){
+        for (BombermanGame bg : this.gameFactory.dbMockup.jogos) {
+            if (bg.isRunning()) {
                 activeGames.add(bg);
             }
         }
@@ -110,12 +114,9 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
     }
 
     public ArrayList<BombermanGame> getAvailableGames() throws RemoteException {
-        if(this.gameFactory.dbMockup.jogos.isEmpty()){
-            return null;
-        }
         ArrayList<BombermanGame> availableGames = new ArrayList<>();
-        for(BombermanGame bg : this.gameFactory.dbMockup.jogos){
-            if(!bg.isRunning()){
+        for (BombermanGame bg : this.gameFactory.dbMockup.jogos) {
+            if (!bg.isRunning()) {
                 availableGames.add(bg);
             }
         }

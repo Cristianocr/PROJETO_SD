@@ -21,7 +21,7 @@ public class BombermanClients {
             String password = JOptionPane.showInputDialog(null, "Digite sua senha:");
 
             try {
-                Registry registry = LocateRegistry.getRegistry("localhost", 1098);
+                Registry registry = LocateRegistry.getRegistry("localhost", 1099);
                 GameFactoryI server = (GameFactoryI) registry.lookup("BombermanServer");
 
                 if (choice == 1) {

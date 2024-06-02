@@ -3,7 +3,8 @@ package edu.ufp.inf.sd.rmi.client;
 // acessada pelo servidor e pelo cliente
 interface Const {
    // se não for 4, muitas coisas precisam deixar de ser instanciadas
-   final static int QTY_PLAYERS = 4; 
+   final static int QTY_PLAYERS = 4;
+   final static int MIN_PLAYERS = 2;
 
    final static int LIN = 9, COL = 9; // sempre ímpar
    final static int RESIZE = 4; // tamanho do pixel
@@ -34,18 +35,3 @@ interface Const {
    };
 }
 
-class Coordinate {
-   public int x, y;
-   String img;
-
-   Coordinate(int x, int y) {
-      this.x = x;
-      this.y = y;
-   }
-
-   Coordinate(int x, int y, String img) {
-      this.x = x;
-      this.y = y;
-      this.img = img;
-   }
-}

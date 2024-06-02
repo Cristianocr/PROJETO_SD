@@ -1,7 +1,10 @@
 package edu.ufp.inf.sd.rmi.client;
 
+import edu.ufp.inf.sd.rmi.client.ObserverRI;
+import edu.ufp.inf.sd.rmi.server.BombermanGame;
 import edu.ufp.inf.sd.rmi.server.State;
 import edu.ufp.inf.sd.rmi.server.SubjectRI;
+import edu.ufp.inf.sd.rmi.server.BombermanGame;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -11,111 +14,168 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 //a cada cliente que entra no servidor, uma nova thread é instanciada para tratá-lo
 class ClientManager extends Thread {
-   static List<PrintStream> listOutClients = new ArrayList<PrintStream>();
+    static List<ObserverRI> listObsClients = new ArrayList<ObserverRI>();
 
-   static void sendToAllClients(String outputLine) {
-      for (PrintStream outClient : listOutClients)
-         outClient.println(outputLine);
-   }
+    private BombermanGame bg;
+    private ObserverRI observerRI;
+    private Socket clientSocket = null;
+    private Scanner in = null;
+    private PrintStream out = null;
+    public int id;
 
-   private Socket clientSocket = null;
-   private Scanner in = null;
-   private PrintStream out = null;
-   private int id;
+    private Client client;
+    private CoordinatesThrower ct;
+    private MapUpdatesThrower mt;
 
-   CoordinatesThrower ct;
-   MapUpdatesThrower mt;
-
-   ClientManager(SubjectRI subjectRI) {
-      (ct = new CoordinatesThrower(this.id)).start();
-      (mt = new MapUpdatesThrower(this.id)).start();
-
-      listOutClients.add(out);
-      Server.player[id].logged = true;
-      Server.player[id].alive = true;
-      sendInitialSettings(); // envia uma única string
-
-      //notifica aos clientes já logados
-      for (PrintStream outClient: listOutClients)
-         if (outClient != this.out)
-            outClient.println(id + " playerJoined");
-   }
+    private PlayerData player[];
+    private Coordinate map[][];
 
 
-   ClientManager(Socket clientSocket, int id) {
-      this.id = id;
-      this.clientSocket = clientSocket;
-      (ct = new CoordinatesThrower(this.id)).start();
-      (mt = new MapUpdatesThrower(this.id)).start();
+    public void sendToAllClients(int id, String msg) throws RemoteException {
+        client.observer.getSubjectRI().setState(new edu.ufp.inf.sd.rmi.server.State(id, msg));
+    }
 
-      try {
-         System.out.print("Iniciando conexão com o jogador " + this.id + "...");
-         this.in = new Scanner(clientSocket.getInputStream()); // para receber do cliente
-         this.out = new PrintStream(clientSocket.getOutputStream(), true); // para enviar ao cliente
-      } catch (IOException e) {
-         System.out.println(" erro: " + e + "\n");
-         System.exit(1);
-      }
-      System.out.print(" ok\n");
+    public ClientManager(Client client, BombermanGame bg, ObserverRI observerRI) throws RemoteException {
+        this.id = observerRI.getId();
+        this.observerRI = observerRI;
+        this.bg = bg;
 
-      listOutClients.add(out);
-      Server.player[id].logged = true;
-      Server.player[id].alive = true;
-      sendInitialSettings(); // envia uma única string
+        this.client = client;
+        player = client.getPlayer();
+        map = client.getMap();
 
-      //notifica aos clientes já logados
-      for (PrintStream outClient: listOutClients)
-         if (outClient != this.out)
-            outClient.println(id + " playerJoined");
-   }
 
-   public void run() {
-      while (in.hasNextLine()) { // conexão estabelecida com o cliente this.id
-         String str[] = in.nextLine().split(" ");
-         
-         if (str[0].equals("keyCodePressed") && Server.player[id].alive) {    
-            ct.keyCodePressed(Integer.parseInt(str[1]));
-         } 
-         else if (str[0].equals("keyCodeReleased") && Server.player[id].alive) {
-            ct.keyCodeReleased(Integer.parseInt(str[1]));
-         } 
-         else if (str[0].equals("pressedSpace") && Server.player[id].numberOfBombs >= 1) {
-            Server.player[id].numberOfBombs--;
-            mt.setBombPlanted(Integer.parseInt(str[1]), Integer.parseInt(str[2]));
-         }
-      }
-      clientDesconnected();
-   }
+        (ct = new CoordinatesThrower(this,id)).start();
+        (mt = new MapUpdatesThrower(this,id)).start();
 
-   void sendInitialSettings() {
-      out.print(id);
-      for (int i = 0; i < Const.LIN; i++)
-         for (int j = 0; j < Const.COL; j++)
-            out.print(" " + Server.map[i][j].img);
 
-      for (int i = 0; i < Const.QTY_PLAYERS; i++)
-         out.print(" " + Server.player[i].alive);
+        listObsClients.add(observerRI);
+        player[id].logged = true;
+        player[id].alive = true;
+        //sendInitialSettings(); // envia uma única string
 
-      for (int i = 0; i < Const.QTY_PLAYERS; i++)
-         out.print(" " + Server.player[i].x + " " + Server.player[i].y);
-      out.print("\n");
-   }
+        sendToAllClients(id, "playerJoined");
+    }
 
-   void clientDesconnected() {
-      listOutClients.remove(out);
-      Server.player[id].logged = false;
-      try {
-         System.out.print("Encerrando conexão com o jogador " + this.id + "...");
-         in.close();
-         out.close();
-         clientSocket.close();
-      } catch (IOException e) {
-         System.out.println(" erro: " + e + "\n");
-         System.exit(1);
-      }
-      System.out.print(" ok\n");
-   }
 
+    public void run() {
+        String str;
+
+        while (true) {
+            try {
+                str = observerRI.getSubjectRI().getState().getInfo();
+                System.out.println("msg observer: " + str);
+                id = observerRI.getSubjectRI().getState().getId();
+            } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            }
+
+            String[] strMessage = str.split(" ");
+            String message = strMessage[0];
+
+
+            if (message.equals("keyCodePressed") && player[id].alive) {
+                try {
+                    ct.keyCodePressed(Integer.parseInt(strMessage[1]));
+                } catch (RemoteException e) {
+                    throw new RuntimeException(e);
+                }
+            } else if (message.equals("keyCodeReleased") && player[id].alive) {
+                try {
+                    ct.keyCodeReleased(Integer.parseInt(strMessage[1]));
+                } catch (RemoteException e) {
+                    throw new RuntimeException(e);
+                }
+            } else if (message.equals("pressedSpace") && player[id].numberOfBombs >= 1) {
+                player[id].numberOfBombs--;
+                mt.setBombPlanted(Integer.parseInt(strMessage[1]), Integer.parseInt(strMessage[2]));
+            }
+        }
+    }
+
+    void sendInitialSettings() {
+        out.print(id);
+        for (int i = 0; i < Const.LIN; i++)
+            for (int j = 0; j < Const.COL; j++)
+                out.print(" " + map[i][j].img);
+
+        for (int i = 0; i < Const.QTY_PLAYERS; i++)
+            out.print(" " + player[i].alive);
+
+        for (int i = 0; i < Const.QTY_PLAYERS; i++)
+            out.print(" " + player[i].x + " " + player[i].y);
+        out.print("\n");
+    }
+
+    void clientDesconnected() throws RemoteException {
+        listObsClients.remove(observerRI);
+        player[id].logged = false;
+    }
+
+    public BombermanGame getBg() {
+        return bg;
+    }
+
+    public void setBg(BombermanGame bg) {
+        this.bg = bg;
+    }
+
+    public ObserverRI getObserverRI() {
+        return observerRI;
+    }
+
+    public void setObserverRI(ObserverRI observerRI) {
+        this.observerRI = observerRI;
+    }
+
+    public Socket getClientSocket() {
+        return clientSocket;
+    }
+
+    public void setClientSocket(Socket clientSocket) {
+        this.clientSocket = clientSocket;
+    }
+
+    public Scanner getIn() {
+        return in;
+    }
+
+    public void setIn(Scanner in) {
+        this.in = in;
+    }
+
+    public PrintStream getOut() {
+        return out;
+    }
+
+    public void setOut(PrintStream out) {
+        this.out = out;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public CoordinatesThrower getCt() {
+        return ct;
+    }
+
+    public void setCt(CoordinatesThrower ct) {
+        this.ct = ct;
+    }
+
+    public MapUpdatesThrower getMt() {
+        return mt;
+    }
+
+    public void setMt(MapUpdatesThrower mt) {
+        this.mt = mt;
+    }
 }

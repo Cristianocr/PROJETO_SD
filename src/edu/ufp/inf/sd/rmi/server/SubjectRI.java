@@ -20,4 +20,7 @@ public interface SubjectRI extends Remote {
 
     public void notifyAllObservers(State state) throws RemoteException;
 
+    public boolean isFull() throws RemoteException;
+
+    public void setFull(boolean full) throws RemoteException;
 }

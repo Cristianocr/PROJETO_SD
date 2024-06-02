@@ -62,7 +62,7 @@ public class Sprite {
    static void loadImages() {
       try {
          System.out.print("Carregando imagens...");
-         String basePath = "/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src/edu/ufp/inf/sd/rmi/images/";
+         String basePath = "/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src/edu/ufp/inf/sd/rabbitmq/bomberman/images/";
          for (String keyWord : mapKeyWords)
             ht.put(keyWord, ImageIO.read(new File(basePath + "map/basic/"+keyWord+".png")));
 

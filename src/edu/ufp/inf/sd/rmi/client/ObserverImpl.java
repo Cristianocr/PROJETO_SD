@@ -7,22 +7,17 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class ObserverImpl extends UnicastRemoteObject implements ObserverRI {
-    private static int nextId = 1; // Campo estático para armazenar o próximo ID disponível
     private int id;
     private State lastObserverState;
     protected SubjectRI subjectRI;
     //private Main main;
 
-    public ObserverImpl() throws RemoteException{
-        this.id = getNextId();
+    public ObserverImpl() throws RemoteException {
+        this.id = 0;
     }
 
-    public int getId() throws RemoteException{
+    public int getId() throws RemoteException {
         return id;
-    }
-
-    private static synchronized int getNextId() {
-        return nextId++; // Incrementa o ID e retorna o valor anterior
     }
 
     public void setId(int id) {
@@ -34,12 +29,13 @@ public class ObserverImpl extends UnicastRemoteObject implements ObserverRI {
     }
 
     @Override
-    public void update(State state) throws RemoteException{
-        //this.lastObserverState = state;
+    public void update(State state) throws RemoteException {
+        //lancar as janelas
+        this.lastObserverState = state;
         //this.main.stateHandler(state);
     }
 
-    public void setSubjectRI(SubjectRI subjectRI) throws RemoteException{
+    public void setSubjectRI(SubjectRI subjectRI) throws RemoteException {
         this.subjectRI = subjectRI;
     }
 

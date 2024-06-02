@@ -1,7 +1,7 @@
 package edu.ufp.inf.sd.rmi.client;
 
 //recebe informações de todos os clientes
-public class Receiver extends Thread {
+/*public class Receiver extends Thread {
    Player p;
    
    Player fromWhichPlayerIs(int id) {
@@ -43,4 +43,4 @@ public class Receiver extends Thread {
       }
       Client.in.close();
    }
-}
+}*/

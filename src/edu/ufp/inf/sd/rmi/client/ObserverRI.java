@@ -17,6 +17,9 @@ public interface ObserverRI extends Remote {
     //void setMain(Main main) throws RemoteException;
 
     int getId() throws RemoteException;
+
+    void setId(int i) throws RemoteException;
+
     //Main getMain() throws RemoteException;
 
 }
