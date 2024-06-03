@@ -48,14 +48,14 @@ class ClientManager extends Thread {
         map = client.getMap();
 
 
-        (ct = new CoordinatesThrower(this,id)).start();
-        (mt = new MapUpdatesThrower(this,id)).start();
+        (ct = new CoordinatesThrower(this, id)).start();
+        (mt = new MapUpdatesThrower(this, id)).start();
 
 
         listObsClients.add(observerRI);
         player[id].logged = true;
         player[id].alive = true;
-        //sendInitialSettings(); // envia uma única string
+        //sendInitialSettings();
 
         sendToAllClients(id, "playerJoined");
     }
@@ -65,10 +65,16 @@ class ClientManager extends Thread {
         String str;
 
         while (true) {
+            /*try {
+                str = observerRI.getSubjectRI().getState().getInfo();
+                id = observerRI.getSubjectRI().getState().getId();
+                System.out.println("msg observer: " + str + " " + id);
+            } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            }*/
+
             try {
                 str = observerRI.getSubjectRI().getState().getInfo();
-                System.out.println("msg observer: " + str);
-                id = observerRI.getSubjectRI().getState().getId();
             } catch (RemoteException e) {
                 throw new RuntimeException(e);
             }
@@ -96,18 +102,23 @@ class ClientManager extends Thread {
         }
     }
 
-    void sendInitialSettings() {
-        out.print(id);
-        for (int i = 0; i < Const.LIN; i++)
-            for (int j = 0; j < Const.COL; j++)
-                out.print(" " + map[i][j].img);
+    void sendInitialSettings() throws RemoteException {
+        StringBuilder msg = new StringBuilder();
+        edu.ufp.inf.sd.rmi.server.State s = new edu.ufp.inf.sd.rmi.server.State(id, msg.toString());
+        for (int i = 0; i < Const.LIN; i++) {
+            for (int j = 0; j < Const.COL; j++) {
+                msg.append(map[i][j].img).append(" ");
+            }
+        }
+        for (int i = 0; i < Const.QTY_PLAYERS; i++) {
+            msg.append(String.valueOf(player[i].alive)).append(" ");
+        }
 
-        for (int i = 0; i < Const.QTY_PLAYERS; i++)
-            out.print(" " + player[i].alive);
-
-        for (int i = 0; i < Const.QTY_PLAYERS; i++)
-            out.print(" " + player[i].x + " " + player[i].y);
-        out.print("\n");
+        for (int i = 0; i < Const.QTY_PLAYERS; i++) {
+            msg.append(player[i].x).append(" ").append(player[i].y).append(" ");
+        }
+        s.setInfo("\n");
+        observerRI.update(s);
     }
 
     void clientDesconnected() throws RemoteException {

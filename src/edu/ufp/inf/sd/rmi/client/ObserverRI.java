@@ -10,6 +10,8 @@ public interface ObserverRI extends Remote {
 
     void update(State state) throws RemoteException;
 
+    public State getLastObserverState() throws RemoteException;
+
     void setSubjectRI(SubjectRI subjectRI) throws RemoteException;
 
     SubjectRI getSubjectRI() throws RemoteException;

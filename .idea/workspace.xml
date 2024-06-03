@@ -5,28 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9bc2a3c-dbc7-4204-9d27-f03306bd12c1" name="Changes" comment="update1">
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/PlayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Thrower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Const.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/CoordinatesThrower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/MapUpdatesThrower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/PlayerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Sprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Thrower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/BombermanClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/BombermanClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ServerGuiClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ConsumerM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ReceiveLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ReceiveLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/EmitLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/EmitLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/ProducerM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/setenv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/setenv.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/CoordinatesThrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/CoordinatesThrower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/MapUpdatesThrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/MapUpdatesThrower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ObserverImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ObserverRI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ObserverRI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Sender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Sprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/GameSessionI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/GameSessionI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/GameSessionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/GameSessionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/SubjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/SubjectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/SubjectRI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server/SubjectRI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Thrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Thrower.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,57 +79,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BombermanClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BombermanServer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Client (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DigLibServer.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Server.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SubjectServer.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;JAR Application.jackson-annotations-2.14.2.jar.executor&quot;: &quot;Run&quot;,
-    &quot;JAR Application.java-jwt-4.4.0.jar.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Shell Script._1_runpython.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script._2_runregistry.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script._3_runserver.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script._4_runclient.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.runconsumer.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.runobserver.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.runproducer.sh.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.startAll.sh.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;LAST&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src/edu/ufp/inf/sd/rmi/client&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BombermanClient.executor": "Run",
+    "Application.BombermanServer.executor": "Run",
+    "Application.Client (1).executor": "Run",
+    "Application.Client.executor": "Run",
+    "Application.DigLibServer.executor": "Run",
+    "Application.Server.executor": "Run",
+    "Application.SubjectServer.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JAR Application.jackson-annotations-2.14.2.jar.executor": "Run",
+    "JAR Application.java-jwt-4.4.0.jar.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script._1_runpython.sh.executor": "Run",
+    "Shell Script._2_runregistry.sh.executor": "Run",
+    "Shell Script._3_runserver.sh.executor": "Run",
+    "Shell Script._4_runclient.sh.executor": "Run",
+    "Shell Script.runconsumer.sh.executor": "Run",
+    "Shell Script.runobserver.sh.executor": "Run",
+    "Shell Script.runproducer.sh.executor": "Run",
+    "Shell Script.startAll.sh.executor": "Run",
+    "git-widget-placeholder": "LAST",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src/edu/ufp/inf/sd/rabbitmq/chatgui",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34367815",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.ufp.inf.sd.rmi.client" />
       <recent name="edu.ufp.inf.sd.rmi.server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui" />
+      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq" />
       <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client" />
       <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/server" />
       <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
-      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman/client" />
-      <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/bomberman" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi" />
@@ -131,43 +139,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.ufp.inf.sd.rabbitmq.client" />
       <recent name="edu.ufp.inf.sd.rmi.client" />
       <recent name="edu.ufp.inf.sd.rabbitmq.consumer" />
       <recent name="edu.ufp.inf.sd.rabbitmq.producer" />
       <recent name="edu.ufp.inf.sd.rabbitmq.chatgui" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script._4_runclient.sh">
-    <configuration name="_1_runpython.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/_1_runpython.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="_2_runregistry.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/_2_runregistry.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
-      <option name="INTERPRETER_OPTIONS" value="bash" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Shell Script.runobserver.sh">
     <configuration name="_3_runserver.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -198,13 +177,43 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="startAll.sh" type="ShConfigurationType" temporary="true">
+    <configuration name="runconsumer.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts/startAll.sh" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runconsumer.sh" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/runscripts" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="runobserver.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runobserver.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="runproducer.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/runproducer.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts" />
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
       <option name="INTERPRETER_PATH" value="/usr/bin/env" />
       <option name="INTERPRETER_OPTIONS" value="bash" />
@@ -215,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.runobserver.sh" />
+        <item itemvalue="Shell Script.runconsumer.sh" />
+        <item itemvalue="Shell Script.runproducer.sh" />
         <item itemvalue="Shell Script._4_runclient.sh" />
         <item itemvalue="Shell Script._3_runserver.sh" />
-        <item itemvalue="Shell Script._2_runregistry.sh" />
-        <item itemvalue="Shell Script._1_runpython.sh" />
-        <item itemvalue="Shell Script.startAll.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +266,8 @@
       <workItem from="1717020037454" duration="10515000" />
       <workItem from="1717146402876" duration="2173000" />
       <workItem from="1717148592160" duration="17354000" />
-      <workItem from="1717172941976" duration="51716000" />
+      <workItem from="1717172941976" duration="63507000" />
+      <workItem from="1717359582260" duration="16248000" />
     </task>
     <task id="LOCAL-00001" summary="update1">
       <option name="closed" value="true" />
@@ -331,7 +341,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716759357790</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update1">
+      <option name="closed" value="true" />
+      <created>1717346436290</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717346436290</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update1">
+      <option name="closed" value="true" />
+      <created>1717346445937</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717346445937</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update1">
+      <option name="closed" value="true" />
+      <created>1717346484042</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717346484042</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

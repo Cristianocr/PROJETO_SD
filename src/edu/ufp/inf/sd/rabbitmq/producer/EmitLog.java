@@ -57,16 +57,15 @@ public class EmitLog {
         try (Connection connection=RabbitUtils.newConnection2Server(host, port, "guest", "guest");
              Channel channel=RabbitUtils.createChannel2Server(connection)) {
             // Declare a queue where to send msg (idempotent, i.e., it will only be created if it doesn't exist);
-            //channel.queueDeclare(queueName, false, false, false, null);
             //channel.queueDeclare(QUEUE_NAME, true, false, false, null);
 
-            System.out.println( "[x] Declare exchange: '" + exchangeName + "' of type " + BuiltinExchangeType.FANOUT.toString());
+            System.out.println(" [x] Declare exchange: '" + exchangeName + "' of type ");
             channel.exchangeDeclare(exchangeName, BuiltinExchangeType.FANOUT);
 
-            String message=RabbitUtils.getMessage(args, 3);
-            // Publish a message to the queue (content is byte array encoded with UTF-8)
+            String message = RabbitUtils.getMessage(args, 3);
             String routingKey="";
-            channel.basicPublish(exchangeName, routingKey, null, message.getBytes("UTF-8"));
+            // Publish a message to the queue (content is byte array encoded with UTF-8)
+            channel.basicPublish(exchangeName, routingKey,null, message.getBytes("UTF-8"));
             System.out.println(" [x] Sent '" + message + "'");
 
         } catch (IOException | TimeoutException e) {

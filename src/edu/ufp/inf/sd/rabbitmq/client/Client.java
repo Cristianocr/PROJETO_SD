@@ -1,28 +1,21 @@
-package edu.ufp.inf.sd.rmi.client;
+package edu.ufp.inf.sd.rabbitmq.client;
 
-import edu.ufp.inf.sd.rmi.client.ObserverRI;
-import edu.ufp.inf.sd.rmi.server.BombermanGame;
-import edu.ufp.inf.sd.rmi.server.State;
-import edu.ufp.inf.sd.rmi.server.SubjectRI;
-import edu.ufp.inf.sd.rmi.client.Game;
+import edu.ufp.inf.sd.rabbitmq.client.Player;
+import edu.ufp.inf.sd.rabbitmq.chatgui.Observer;
+import edu.ufp.inf.sd.rabbitmq.client.Game;
 
 import javax.swing.*;
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.io.PrintStream;
-import java.net.Socket;
-import java.net.UnknownHostException;
 import java.rmi.RemoteException;
-import java.util.Scanner;
-import java.util.Stack;
 
 
 public class Client {
     public int id;
-    public ObserverRI observer;
-    public BombermanGame bg;
-    public SubjectRI subjectRI;
+
+    public Observer observer;
 
     private Game game;
     private Client client;
@@ -34,12 +27,10 @@ public class Client {
     private Coordinate spawn[] = new Coordinate[Const.QTY_PLAYERS];
     private boolean alive[] = new boolean[Const.QTY_PLAYERS];
 
-    public Client(BombermanGame bg, ObserverRI observer) throws RemoteException {
+    public Client(Observer observer, int playerID) throws IOException {
         this.client = this;
-        this.bg = bg;
         this.observer = observer;
-        this.subjectRI = bg.getSubjectRI();
-        id = observer.getId();
+        this.id = playerID;
         System.out.println("Observer id: " + id);
 
 
@@ -47,8 +38,7 @@ public class Client {
         setPlayerData();
         receiveInitialSettings();
         new Window();
-        ClientManager clientManager = new ClientManager(this, this.bg, this.observer);
-        clientManager.start();  // This will start the run() method in a new thread
+        new ClientManager(this, this.observer).start();
         new Receiver().start();
     }
 
@@ -120,11 +110,11 @@ public class Client {
             map[i][j] = new Coordinate(Const.SIZE_SPRITE_MAP * j, Const.SIZE_SPRITE_MAP * i, in.next());
       */
         //situação (vivo ou morto) inicial de todos os jogadores
-        for (int i = 0; i < subjectRI.getObservers().size(); i++) {
+        for (int i = 0; i < observer.getPlayerNumber(); i++) {
             alive[i] = true;
         }
         //coordenadas inicias de todos os jogadores
-        for (int i = 0; i < bg.getPlayerNumber(); i++) {
+        for (int i = 0; i < Const.QTY_PLAYERS; i++) {
             spawn[i] = new Coordinate(player[i].x, player[i].y);
         }
     }
@@ -210,43 +200,37 @@ public class Client {
         int lastKeyCodePressed;
 
         public void keyPressed(KeyEvent e) {
-            String keyState = null;
             if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-                keyState = "pressedSpace " + game.getYou().x + " " + game.getYou().y;
-            } else if (isNewKeyCode(e.getKeyCode())) {
-                keyState = "keyCodePressed " + e.getKeyCode();
-            }
-            if (keyState != null) {
                 try {
-                    System.out.println("teclas pressionadas no Sender: " + keyState);
-                    State state = new State(observer.getId(), keyState);
-                    subjectRI.setState(state);
-                } catch (RemoteException ex) {
+                    observer.sendMessage("pressedSpace " + game.getYou().x + " " + game.getYou().y);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            } else if (isNewKeyCode(e.getKeyCode())) {
+                try {
+                    observer.sendMessage("keyCodePressed " + e.getKeyCode());
+                } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
             }
         }
 
         public void keyReleased(KeyEvent e) {
-            String keyState = "keyCodeReleased " + e.getKeyCode();
-
             try {
-                System.out.println("teclas released no Sender: " + keyState);
-
-                State state = new State(observer.getId(), keyState);
-                subjectRI.setState(state);
-            } catch (RemoteException ex) {
+                observer.sendMessage("keyCodeReleased " + e.getKeyCode());
+            } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
             lastKeyCodePressed = -1; //a próxima tecla sempre será nova
         }
 
         boolean isNewKeyCode(int keyCode) {
-            boolean ok = (keyCode != lastKeyCodePressed);
+            boolean ok = (keyCode != lastKeyCodePressed) ? true : false;
             lastKeyCodePressed = keyCode;
             return ok;
         }
     }
+
 
     public class Receiver extends Thread {
         Player p;
@@ -264,34 +248,38 @@ public class Client {
         }
 
         public void run() {
+            String str, msg;
             while (true) {
-                String str;
-                try {
-                    str = subjectRI.getState().getInfo();
-                    id = subjectRI.getState().getId();
-                } catch (RemoteException e) {
-                    throw new RuntimeException(e);
+                System.out.println("ENTREI NO RUN CLIENT RECEIVER");
+
+                if ((str = observer.getReceivedMessage()) == null) {
+                    System.out.println("fsdsdsd");
+                    continue;
                 }
 
-                this.p = fromWhichPlayerIs(id);
+                System.out.println("ywywywy");
+                System.out.println(str);
                 String[] strMessage = str.split(" ");
-                String message = strMessage[0];
 
-                if (message.equals("mapUpdate")) { //p null
-                    game.setSpriteMap(strMessage[1], Integer.parseInt(strMessage[2]), Integer.parseInt(strMessage[3]));
+                this.p = fromWhichPlayerIs(Integer.parseInt(strMessage[0])); //id do cliente
+                msg = strMessage[1];
+
+                if (msg.equals("mapUpdate")) { //p null
+                    game.setSpriteMap(strMessage[2], Integer.parseInt(strMessage[3]), Integer.parseInt(strMessage[4]));
                     game.getYou().panel.repaint();
-                } else if (message.equals("newCoordinate")) {
-                    p.x = Integer.parseInt(strMessage[1]);
-                    p.y = Integer.parseInt(strMessage[2]);
+                } else if (msg.equals("newCoordinate")) {
+                    p.x = Integer.parseInt(strMessage[2]);
+                    p.y = Integer.parseInt(strMessage[3]);
                     game.getYou().panel.repaint();
-                } else if (message.equals("newStatus")) {
-                    p.sc.setLoopStatus(strMessage[1]);
-                } else if (message.equals("stopStatusUpdate")) {
+                } else if (msg.equals("newStatus")) {
+                    p.sc.setLoopStatus(strMessage[2]);
+                } else if (msg.equals("stopStatusUpdate")) {
                     p.sc.stopLoopStatus();
-                } else if (message.equals("playerJoined")) {
+                } else if (msg.equals("playerJoined")) {
                     p.alive = true;
                 }
             }
+
         }
     }
 
@@ -313,7 +301,7 @@ public class Client {
             addKeyListener(new Sender());
         }
     }
-
 }
+
 
 

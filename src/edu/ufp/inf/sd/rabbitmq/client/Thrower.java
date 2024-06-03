@@ -1,5 +1,6 @@
-package edu.ufp.inf.sd.rmi.client;
+package edu.ufp.inf.sd.rabbitmq.client;
 
+import java.io.IOException;
 import java.rmi.RemoteException;
 
 //thread auxiliar
@@ -10,7 +11,7 @@ public class Thrower extends Thread {
 
     private MapUpdatesThrower mut;
 
-    Thrower(MapUpdatesThrower mut,String keyWord, String index[], int delay, int l, int c) {
+    Thrower(MapUpdatesThrower mut, String keyWord, String index[], int delay, int l, int c) {
         this.mut = mut;
         this.keyWord = keyWord;
         this.index = index;
@@ -23,8 +24,9 @@ public class Thrower extends Thread {
         for (String i : index) {
             try {
                 mut.changeMap(keyWord + "-" + i, l, c);
-                System.out.println("BOMBAAAAAA");
             } catch (RemoteException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
                 throw new RuntimeException(e);
             }
             try {
@@ -34,8 +36,9 @@ public class Thrower extends Thread {
         //situação pós-explosão
         try {
             mut.changeMap("floor-1", l, c);
-            System.out.println("SENSUALLLLLLLL");
         } catch (RemoteException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

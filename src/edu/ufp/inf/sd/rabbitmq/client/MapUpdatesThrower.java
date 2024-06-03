@@ -1,5 +1,6 @@
-package edu.ufp.inf.sd.rmi.client;
+package edu.ufp.inf.sd.rabbitmq.client;
 
+import java.io.IOException;
 import java.rmi.RemoteException;
 
 //thread que lança mudanças graduais no mapa que ocorrem logo após a bomba ser plantada
@@ -35,7 +36,7 @@ public class MapUpdatesThrower extends Thread {
     }
 
     //muda o mapa no servidor e no cliente
-    public void changeMap(String keyWord, int l, int c) throws RemoteException {
+    public void changeMap(String keyWord, int l, int c) throws IOException {
         map[l][c].img = keyWord;
         cm.sendToAllClients(id, "mapUpdate " + keyWord + " " + l + " " + c);
     }
@@ -49,7 +50,7 @@ public class MapUpdatesThrower extends Thread {
     }
 
     // verifica se o fogo atingiu algum jogador parado (coordenada do centro do corpo)
-    public void checkIfExplosionKilledSomeone(int linSprite, int colSprite) throws RemoteException {
+    public void checkIfExplosionKilledSomeone(int linSprite, int colSprite) throws IOException {
         int linPlayer, colPlayer, x, y;
 
         for (int id = 0; id < Const.QTY_PLAYERS; id++)
@@ -77,6 +78,8 @@ public class MapUpdatesThrower extends Thread {
                         changeMap("bomb-planted-" + index, l, c);
                     } catch (RemoteException e) {
                         throw new RuntimeException(e);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
                     }
                     try {
                         sleep(Const.RATE_BOMB_UPDATE);
@@ -90,6 +93,8 @@ public class MapUpdatesThrower extends Thread {
                     checkIfExplosionKilledSomeone(l, c);
                 } catch (RemoteException e) {
                     throw new RuntimeException(e);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
 
                 //abaixo
@@ -98,6 +103,8 @@ public class MapUpdatesThrower extends Thread {
                     try {
                         checkIfExplosionKilledSomeone(l + 1, c);
                     } catch (RemoteException e) {
+                        throw new RuntimeException(e);
+                    } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
                 } else if (map[l + 1][c].img.contains("block"))
@@ -110,6 +117,8 @@ public class MapUpdatesThrower extends Thread {
                         checkIfExplosionKilledSomeone(l, c + 1);
                     } catch (RemoteException e) {
                         throw new RuntimeException(e);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
                     }
                 } else if (map[l][c + 1].img.contains("block"))
                     new Thrower(mut, "block-on-fire", Const.indexBlockOnFire, Const.RATE_BLOCK_UPDATE, l, c + 1).start();
@@ -121,6 +130,8 @@ public class MapUpdatesThrower extends Thread {
                         checkIfExplosionKilledSomeone(l - 1, c);
                     } catch (RemoteException e) {
                         throw new RuntimeException(e);
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
                     }
                 } else if (map[l - 1][c].img.contains("block"))
                     new Thrower(mut, "block-on-fire", Const.indexBlockOnFire, Const.RATE_BLOCK_UPDATE, l - 1, c).start();
@@ -131,6 +142,8 @@ public class MapUpdatesThrower extends Thread {
                     try {
                         checkIfExplosionKilledSomeone(l, c - 1);
                     } catch (RemoteException e) {
+                        throw new RuntimeException(e);
+                    } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
                 } else if (map[l][c - 1].img.contains("block"))

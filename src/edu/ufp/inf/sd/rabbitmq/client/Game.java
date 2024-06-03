@@ -1,4 +1,4 @@
-package edu.ufp.inf.sd.rmi.client;
+package edu.ufp.inf.sd.rabbitmq.client;
 
 import javax.swing.*;
 import java.awt.*;

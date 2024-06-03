@@ -3,8 +3,11 @@ package edu.ufp.inf.sd.rabbitmq.chatgui;
 import com.rabbitmq.client.AMQP.BasicProperties;
 import com.rabbitmq.client.*;
 import edu.ufp.inf.sd.rabbitmq.util.RabbitUtils;
+import edu.ufp.inf.sd.rabbitmq.client.Client;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,36 +18,66 @@ import java.util.logging.Logger;
 public class Observer {
 
     //Reference for gui
-    private final ObserverGuiClient gui;
+    private ObserverGuiClient gui;
 
     //Preferences for exchange...
-    private final Channel channelToRabbitMq;
-    private final String exchangeName;
-    private final BuiltinExchangeType exchangeType;
+    private Channel channelToRabbitMq;
+    private String exchangeName;
+    private BuiltinExchangeType exchangeType;
     //private final String[] exchangeBindingKeys;
-    private final String messageFormat;
+    private String messageFormat;
 
     //Store received message to be get by gui
     private String receivedMessage;
 
+    private int playerID;
+    private Client client;
+    public int count = 0;
+    public ArrayList<Integer> players = new ArrayList<>();
+
+    public int getPlayerNumber() {
+        return players.size();
+    }
+
+    public ArrayList<Integer> getPlayersTotal() {
+        return this.players;
+    }
+
+    public int getPlayerID() {
+        return playerID;
+    }
+
+
+    public Observer(ObserverGuiClient gui) {
+        this.gui = gui;
+    }
+
     /**
      * @param gui
      */
-    public Observer(ObserverGuiClient gui, String host, int port, String user, String pass, String exchangeName, BuiltinExchangeType exchangeType, String messageFormat) throws IOException, TimeoutException {
-        this.gui=gui;
+    public Observer(ObserverGuiClient gui, String host, int port, String user, String pass, String exchangeName, BuiltinExchangeType exchangeType, String messageFormat, int playerID, Client client) throws IOException, TimeoutException {
+        this.gui = gui;
         Logger.getLogger(this.getClass().getName()).log(Level.INFO, " going to attach observer to host: " + host + "...");
 
-        Connection connection=RabbitUtils.newConnection2Server(host, port, user, pass);
-        this.channelToRabbitMq=RabbitUtils.createChannel2Server(connection);
+        Connection connection = RabbitUtils.newConnection2Server(host, port, user, pass);
+        this.channelToRabbitMq = RabbitUtils.createChannel2Server(connection);
 
-        this.exchangeName=exchangeName;
-        this.exchangeType=exchangeType;
+        this.exchangeName = exchangeName;
+        this.exchangeType = exchangeType;
         //String[] bindingKeys={"",""};
         //this.exchangeBindingKeys=bindingKeys;
-        this.messageFormat=messageFormat;
+        this.messageFormat = messageFormat;
+        this.client = client;
+        this.playerID = playerID;
+        players.add(playerID);
 
         bindExchangeToChannelRabbitMQ();
         attachConsumerToChannelExchangeWithKey();
+
+    }
+
+    public void setPlayerID(int playerID) {
+        this.playerID = playerID;
     }
 
     /**
@@ -54,7 +87,7 @@ public class Observer {
         Logger.getLogger(this.getClass().getName()).log(Level.INFO, "Declaring Exchange '" + this.exchangeName + "' with type " + this.exchangeType);
 
         /* TODO: Declare exchange type  */
-        this.channelToRabbitMq.exchangeDeclare(this.exchangeName, this.exchangeType);
+        this.channelToRabbitMq.exchangeDeclare(exchangeName + "observer", BuiltinExchangeType.FANOUT);
 
     }
 
@@ -63,13 +96,13 @@ public class Observer {
      */
     public void attachConsumerToChannelExchangeWithKey() {
         try {
-            /* TODO: Create a non-durable, exclusive, autodelete queue with a generated name.
-                The string queueName will contain a random queue name (e.g. amq.gen-JzTY20BRgKO-HjmUJj0wLg) */
+
             String queueName = this.channelToRabbitMq.queueDeclare().getQueue();
 
 
-            /* TODO: Create binding: tell exchange to send messages to a queue; fanout exchange ignores the last parameter (binding key) */
-            this.channelToRabbitMq.queueBind(queueName, this.exchangeName, "");
+            String routingKey = "";
+            channelToRabbitMq.queueBind(queueName, exchangeName + "observer", routingKey);
+            channelToRabbitMq.queuePurge(queueName);
 
 
             Logger.getLogger(this.getClass().getName()).log(Level.INFO, " Created consumerChannel bound to Exchange " + this.exchangeName + "...");
@@ -77,24 +110,20 @@ public class Observer {
             /* Use a DeliverCallback lambda function instead of DefaultConsumer to receive messages from queue;
                DeliverCallback is an interface which provides a single method:
                 void handle(String tag, Delivery delivery) throws IOException; */
-            DeliverCallback deliverCallback=(consumerTag, delivery) -> {
-                String message=new String(delivery.getBody(), messageFormat);
+            DeliverCallback deliverCallback = (consumerTag, delivery) -> {
+                String message = new String(delivery.getBody(), messageFormat);
 
                 //Store the received message
                 setReceivedMessage(message);
                 System.out.println(" [x] Consumer Tag [" + consumerTag + "] - Received '" + message + "'");
 
-                // TODO: Notify the GUI about the new message arrive
-                gui.updateTextArea();
 
             };
-            CancelCallback cancelCallback=consumerTag -> {
+            CancelCallback cancelCallback = consumerTag -> {
                 System.out.println(" [x] Consumer Tag [" + consumerTag + "] - Cancel Callback invoked!");
             };
 
-            // TODO: Consume with deliver and cancel callbacks
-            this.channelToRabbitMq.basicConsume(queueName, true, deliverCallback, cancelCallback);
-
+            channelToRabbitMq.basicConsume(queueName, true, deliverCallback, cancelCallback);
 
         } catch (Exception e) {
             Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, e.toString());
@@ -109,11 +138,10 @@ public class Observer {
      */
     public void sendMessage(String msgToSend) throws IOException {
         //RoutingKey will be ignored by FANOUT exchange
-        String routingKey="";
+        String routingKey = "";
         BasicProperties prop = MessageProperties.PERSISTENT_TEXT_PLAIN;
 
-        // TODO: Publish message
-        this.channelToRabbitMq.basicPublish(this.exchangeName, routingKey, prop, msgToSend.getBytes());
+        channelToRabbitMq.basicPublish(exchangeName + "observer", routingKey, prop, msgToSend.getBytes(StandardCharsets.UTF_8));
 
     }
 
@@ -128,6 +156,18 @@ public class Observer {
      * @param receivedMessage the received message to set
      */
     public void setReceivedMessage(String receivedMessage) {
-        this.receivedMessage=receivedMessage;
+        this.receivedMessage = receivedMessage;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 }
