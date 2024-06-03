@@ -60,13 +60,13 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
     public BombermanGame createGame(Integer playerNumber, ObserverRI observerRI) throws RemoteException {
         SubjectRI subjectRI = new SubjectImpl();
 
-        BombermanGame bombermanGame = gameFactory.dbMockup.insert(playerNumber, subjectRI);
+        BombermanGame bg = gameFactory.dbMockup.insert(playerNumber, subjectRI);
 
         observerRI.setSubjectRI(subjectRI);
 
-        bombermanGame.getSubjectRI().attach(observerRI);
+        bg.getSubjectRI().attach(observerRI);
 
-        return bombermanGame;
+        return bg;
     }
 
     /**
@@ -85,6 +85,12 @@ public class GameSessionImpl extends UnicastRemoteObject implements GameSessionI
         observerRI.setSubjectRI(bg.getSubjectRI());
 
         bg.getSubjectRI().attach(observerRI);
+
+        if (bg.getSubjectRI().getObservers().size() > bg.getPlayerNumber()) {
+            bg.setRunning(true);
+        } else {
+            bg.setRunning(false);
+        }
 
         return bg;
     }
