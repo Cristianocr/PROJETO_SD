@@ -65,20 +65,10 @@ public class ObserverGuiClient extends JFrame {
             this.observer = new Observer(this, host, port, "guest", "guest", exchangeName, BuiltinExchangeType.FANOUT, "UTF-8", playerID, c);
             this.observer.setClient(new Client(observer, playerID));
             Logger.getLogger(this.getClass().getName()).log(Level.INFO, " After initObserver()...");
-            boolean isWaitingPlayers = true;
-            while (isWaitingPlayers) {
-                TimeUnit.MILLISECONDS.sleep(1);
-                //System.out.println("Number of players that are ready to play: " + this.observer.getCount());
-                if (this.observer.getCount() == 2) {
-                    isWaitingPlayers = false;
-                }
-            }
 
 
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
         } catch (TimeoutException e) {
             throw new RuntimeException(e);
         }

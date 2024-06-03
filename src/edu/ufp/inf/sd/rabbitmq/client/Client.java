@@ -33,7 +33,6 @@ public class Client {
         this.id = playerID;
         System.out.println("Observer id: " + id);
 
-
         setMap();
         setPlayerData();
         receiveInitialSettings();
@@ -202,13 +201,13 @@ public class Client {
         public void keyPressed(KeyEvent e) {
             if (e.getKeyCode() == KeyEvent.VK_SPACE) {
                 try {
-                    observer.sendMessage("pressedSpace " + game.getYou().x + " " + game.getYou().y);
+                    observer.sendMessage(id + " " + "pressedSpace " + game.getYou().x + " " + game.getYou().y);
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
             } else if (isNewKeyCode(e.getKeyCode())) {
                 try {
-                    observer.sendMessage("keyCodePressed " + e.getKeyCode());
+                    observer.sendMessage(id + " " + "keyCodePressed " + e.getKeyCode());
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -217,7 +216,7 @@ public class Client {
 
         public void keyReleased(KeyEvent e) {
             try {
-                observer.sendMessage("keyCodeReleased " + e.getKeyCode());
+                observer.sendMessage(id + " " + "keyCodeReleased " + e.getKeyCode());
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
@@ -261,17 +260,23 @@ public class Client {
                 System.out.println(str);
                 String[] strMessage = str.split(" ");
 
+                System.out.println(strMessage[0]);
+
                 this.p = fromWhichPlayerIs(Integer.parseInt(strMessage[0])); //id do cliente
                 msg = strMessage[1];
 
                 if (msg.equals("mapUpdate")) { //p null
+                    System.out.println(strMessage[2] + " " + strMessage[3] + " " + strMessage[4]);
                     game.setSpriteMap(strMessage[2], Integer.parseInt(strMessage[3]), Integer.parseInt(strMessage[4]));
                     game.getYou().panel.repaint();
                 } else if (msg.equals("newCoordinate")) {
+                    System.out.println(strMessage[2] + " " + strMessage[3]);
+
                     p.x = Integer.parseInt(strMessage[2]);
                     p.y = Integer.parseInt(strMessage[3]);
                     game.getYou().panel.repaint();
                 } else if (msg.equals("newStatus")) {
+                    System.out.println(strMessage[2]);
                     p.sc.setLoopStatus(strMessage[2]);
                 } else if (msg.equals("stopStatusUpdate")) {
                     p.sc.stopLoopStatus();

@@ -63,21 +63,21 @@ class ClientManager extends Thread {
 
                 String str[] = observer.getReceivedMessage().split(" ");
 
-                if (str[0].equals("keyCodePressed") && player[id].alive) {
+                if (str[1].equals("keyCodePressed") && player[id].alive) {
                     try {
-                        ct.keyCodePressed(Integer.parseInt(str[1]));
+                        ct.keyCodePressed(Integer.parseInt(str[2]));
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                } else if (str[0].equals("keyCodeReleased") && player[id].alive) {
+                } else if (str[1].equals("keyCodeReleased") && player[id].alive) {
                     try {
-                        ct.keyCodeReleased(Integer.parseInt(str[1]));
+                        ct.keyCodeReleased(Integer.parseInt(str[2]));
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                } else if (str[0].equals("pressedSpace") && player[id].numberOfBombs >= 1) {
+                } else if (str[1].equals("pressedSpace") && player[id].numberOfBombs >= 1) {
                     player[id].numberOfBombs--;
-                    mt.setBombPlanted(Integer.parseInt(str[1]), Integer.parseInt(str[2]));
+                    mt.setBombPlanted(Integer.parseInt(str[2]), Integer.parseInt(str[3]));
                 }
             }
         }

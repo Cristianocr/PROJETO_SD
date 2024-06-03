@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9bc2a3c-dbc7-4204-9d27-f03306bd12c1" name="Changes" comment="update1">
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/ClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Const.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/CoordinatesThrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/MapUpdatesThrower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/PlayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Thrower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ServerGuiClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ConsumerM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ReceiveLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/consumer/ReceiveLogs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/EmitLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/EmitLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/producer/ProducerM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/setenv.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/runscripts/setenv.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/MapUpdatesThrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/MapUpdatesThrower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ObserverRI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/ObserverRI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Thrower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rmi/client/Thrower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/ClientManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,8 +199,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Shell Script.runobserver.sh" />
-        <item itemvalue="Shell Script.runconsumer.sh" />
         <item itemvalue="Shell Script.runproducer.sh" />
+        <item itemvalue="Shell Script.runconsumer.sh" />
         <item itemvalue="Shell Script._4_runclient.sh" />
         <item itemvalue="Shell Script._3_runserver.sh" />
       </list>
@@ -267,7 +241,7 @@
       <workItem from="1717146402876" duration="2173000" />
       <workItem from="1717148592160" duration="17354000" />
       <workItem from="1717172941976" duration="63507000" />
-      <workItem from="1717359582260" duration="16248000" />
+      <workItem from="1717359582260" duration="20975000" />
     </task>
     <task id="LOCAL-00001" summary="update1">
       <option name="closed" value="true" />
@@ -365,7 +339,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717346484042</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update1">
+      <option name="closed" value="true" />
+      <created>1717376285568</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717376285568</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update1">
+      <option name="closed" value="true" />
+      <created>1717376303834</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717376303834</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
