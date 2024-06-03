@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9bc2a3c-dbc7-4204-9d27-f03306bd12c1" name="Changes" comment="update1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/chatgui/ObserverGuiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/ufp/inf/sd/rabbitmq/client/ClientManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="b9bc2a3c-dbc7-4204-9d27-f03306bd12c1" name="Changes" comment="update1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,46 +48,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BombermanClient.executor": "Run",
-    "Application.BombermanServer.executor": "Run",
-    "Application.Client (1).executor": "Run",
-    "Application.Client.executor": "Run",
-    "Application.DigLibServer.executor": "Run",
-    "Application.Server.executor": "Run",
-    "Application.SubjectServer.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "true",
-    "JAR Application.jackson-annotations-2.14.2.jar.executor": "Run",
-    "JAR Application.java-jwt-4.4.0.jar.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Shell Script._1_runpython.sh.executor": "Run",
-    "Shell Script._2_runregistry.sh.executor": "Run",
-    "Shell Script._3_runserver.sh.executor": "Run",
-    "Shell Script._4_runclient.sh.executor": "Run",
-    "Shell Script.runconsumer.sh.executor": "Run",
-    "Shell Script.runobserver.sh.executor": "Run",
-    "Shell Script.runproducer.sh.executor": "Run",
-    "Shell Script.startAll.sh.executor": "Run",
-    "git-widget-placeholder": "LAST",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src/edu/ufp/inf/sd/rabbitmq/chatgui",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.34367815",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BombermanClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BombermanServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Client (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DigLibServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Server.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SubjectServer.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JAR Application.jackson-annotations-2.14.2.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.java-jwt-4.4.0.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Shell Script._1_runpython.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script._2_runregistry.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script._3_runserver.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script._4_runclient.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.runconsumer.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.runobserver.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.runproducer.sh.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.startAll.sh.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;LAST&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cristianojoaquimsoaresdarocha/Desktop/Faculdade/Faculdade_23_24/2_semestre/SD/PROJETO_SD/src/edu/ufp/inf/sd/rabbitmq/chatgui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="edu.ufp.inf.sd.rmi.client" />
@@ -241,7 +236,7 @@
       <workItem from="1717146402876" duration="2173000" />
       <workItem from="1717148592160" duration="17354000" />
       <workItem from="1717172941976" duration="63507000" />
-      <workItem from="1717359582260" duration="20975000" />
+      <workItem from="1717359582260" duration="21065000" />
     </task>
     <task id="LOCAL-00001" summary="update1">
       <option name="closed" value="true" />
@@ -355,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717376303834</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update1">
+      <option name="closed" value="true" />
+      <created>1717381221984</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717381221984</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
